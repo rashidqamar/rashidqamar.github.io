@@ -84,7 +84,6 @@ body {
 
 /* FOOTER */
 .panel-footer {
-  float: none;
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
@@ -116,32 +115,15 @@ body {
 
 
 /* HOME PAGE */
-.jumbotron {
-  padding-top: 0;
-  background-color: #61122f;
-  float: right;
 
-}
-
-.jumbotron img {
-  padding: 5px 350px;
-  margin: 0;
-}
-
-.row {
-  width: 1200px;
-  padding: 50px;
-  margin-left: 350px;
-}
 
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
-  width: 360px;
+  width: 100%;
   margin-bottom: 15px;
   position: relative;
   border: 2px solid #3F0C1F;
   overflow: hidden;
-  display: block;
 }
 
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
@@ -200,6 +182,9 @@ body {
 /* END MENU CATEGORIES PAGE */
 
 /* SINGLE CATEGORY PAGE */
+.row {
+  margin-top: 18px;
+}
 .menu-item-tile {
   margin-bottom: 25px;
 }
@@ -232,6 +217,7 @@ body {
   width: 80px;
   background-color: #557c3e;
   text-align: center;
+  border-radius: 5px;
 }
 .menu-item-description {
   padding-right: 30px;
@@ -248,9 +234,11 @@ h3.menu-item-title {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .container .jumbotron {
+ .jumbotron {
     background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 675px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
   }
 }
 
@@ -266,9 +254,11 @@ h3.menu-item-title {
   /* End Header */
 
   /* Home Page */
-  .container .jumbotron {
+  .jumbotron {
     background: url('../images/jumbotron_992.jpg') no-repeat;
     height: 558px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
   }
   /* End Home Page */
 }
@@ -276,9 +266,11 @@ h3.menu-item-title {
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
-  .container .jumbotron {
+  .jumbotron {
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
   }
   /* End Home Page */
 }
@@ -344,6 +336,8 @@ h3.menu-item-title {
   .container .jumbotron {
     margin-top: 30px;
     padding: 0;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
   }
   #menu-tile, #specials-tile {
     width: 360px;
@@ -384,6 +378,7 @@ h3.menu-item-title {
     padding-left: 15px;
     float: left;
     width: 100%;
+    margin-bottom: 10px;
   }
 }
 
