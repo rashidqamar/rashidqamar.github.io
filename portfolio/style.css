@@ -353,16 +353,30 @@ form .btn2{
 	cursor: pointer;
 }
 
+
+
 .copyright{
 	width: 100%;
+
 	text-align: center;
 	padding: 25px 0;
 	background: #262626;
 	font-weight: 300;
 	margin-top: 20px;
+	position: absolute;
 }
 
-
+.gotopbtn{
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	background: #ff004f;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	float: right;
+}
 
 /*---------------media query----------*/
 nav .fas {
