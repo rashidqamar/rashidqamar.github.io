@@ -18,7 +18,7 @@
 		<nav>
 			<a href="index.html"><img src="img/Icon_Logo.png"></a>
 			<div class="nav-links" id="navlinks">
-				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<i class="fa fa-times" onclick="closeMenu()"></i>
 				<ul>
 					<li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
 					<li><a href=""><i class="far fa-clone"></i>SERVICES</a></li>
@@ -28,7 +28,7 @@
 					<li><a href=""><i class="fas fa-users"></i>ABOUT</a></li>
 				</ul>
 			</div>
-				<i class="fa fa-bars" onclick="showMenu()"></i>
+				<i class="fa fa-bars" onclick="openMenu()"></i>
 		</nav>
 			<div class="text-box">
 				<h1>Lion's Den - Fitness Studio</h1>
@@ -143,10 +143,10 @@
 
 <script>
 		var navlinks = document.getElementById("navlinks");
-		function showMenu(){
+		function openMenu(){
 			navlinks.style.right = "0";
 		}
-		function hideMenu(){
+		function closeMenu(){
 			navlinks.style.right = "-200px";
 		}
 
