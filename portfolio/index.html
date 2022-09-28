@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rashid Qamar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/l.jpg" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/b22ad7f940.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+           <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Website Developer</p>
+        <h1>Hi, I'm <span>Rashid</span> <br>Qamar from Kolkata</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">My Work is</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">to Design</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">What You Need.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+<!--------about----------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+      <img src="images/user.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Lorem ipsum dolor sit amet. Est voluptatum laborum cum laboriosam obcaecati et quia dolorum et nobis fuga. Aut laborum inventore ut pariatur voluptatem et voluptas eveniet sed voluptatibus odit.</p>
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+            <li><span>Web Development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2019 - Current</span><br> UI/UX Design Training at ET Institute.</li>
+            <li><span>2017 - 2019</span><br>Team Lead at StarApp LLC.</li>
+            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2021</span><br>Graduation from University of Calcutta.</li>
+            <li><span>2017</span><br>Higher Secondary from WBCHSE.</li>
+            <li><span>2015</span><br>Madhiyamik from WBBSE.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----- -------services---------- ----->
+   <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat diam non imperdiet consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+          <a href="#">Lear more</a>
+        </div>
+        <div>
+           <i class="fas fa-crop-alt"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat diam non imperdiet consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+          <a href="#">Lear more</a>
+        </div>
+        <div>
+          <i class="fab fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat diam non imperdiet consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+          <a href="#">Lear more</a>
+        </div>
+      </div>
+    </div>
+   </div> 
+<!----- -------portfolio---------- ----->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+              <h3>Cakelicious</h3>
+              <p>A website design for cake store.</p>
+              <a href="https://rashidqamar.github.io/Cakelicious/index.html"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+              <h3>Lion's Den - Fitness Studio</h3>
+              <p>A modern site dedicated to Fitness Studio.</p>
+              <a href="https://rashidqamar.github.io/lionsden/index.html"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>DAVID CHU'S CHINA BISTRO</h3>
+              <p>A Chinese restuarant based in America has its own way to show thier menu.</p>
+              <a href="https://rashidqamar.github.io/restuarant/index.html"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+<!----- -------contact---------- ----->
+   <div id="contact">
+      <div class="container"> 
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fas fa-paper-plane"></i> raashidqamar7798@gamil.com</p>
+              <p><a href="tel:8910590326"><i class="fas fa-phone-square-alt"></i></a> 8910590326</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <a href="images/resume.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>  
+                </form>
+                <span id="msg">Hello there!</span>
+            </div> 
+          </div>
+
+      </div>
+
+      <div class="copyright">
+          <p>Copyright &#169; Rashid.</p>
+         <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+
+
+
+
+<script>
+  var tablinks = document.getElementByClassName("tab-links");
+  var tabcontents = document.getElementByClassName("tab-contents");
+    function opentab(tabname){
+
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementByIdName('tabname').classList.add("active-tab");
+    }
+
+</script>
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right= "0";
+
+  }
+  function closemenu(){
+    sidemenu.style.right= "-200px";
+
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbywjsSLpnGVb2q3PAf8xzMGG4n3dQaEZpgZAYlP0GPsAbP1kcw1q0tGUQt5kr5MagCesQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function() {
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
