@@ -450,7 +450,14 @@ a {
     padding-left: 2px;
 }
 
-.outerPage .mainContainer .listItems .title a, 
+.outerPage .mainContainer .listItems .title a:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    cursor: pointer;
+}
+
+ 
 .outerPage .mainContainer .listItems .YTicon a {
     text-decoration: none;
     align-items: center;
