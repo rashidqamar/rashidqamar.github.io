@@ -1,0 +1,1314 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Laila&family=Merriweather:ital,wght@1,300&display=swap');
+
+
+:root{
+    --black: #000;
+    --white : #FFF;
+    --green : #3B876C;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+/**** Header starts here ****/
+
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-shadow: 0 0 2px #ccc;
+    position: fixed;
+    z-index: 999;
+}
+
+.main {
+    display: flex;
+    position: absolute;
+    left: 5px;
+    align-items: center;
+}
+#menu-icon {
+    font-size: 35px;
+    color: var(--black);
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+} 
+#menu-icon2 {
+    position: absolute;
+    left: 5px;
+    font-size: 32px;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 10001;
+    transform: rotate(-45deg);
+    display: none;
+} 
+
+.header .primaryHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header .navbar {
+    padding: 0 10px 0 100px;
+    float: left;
+}
+.header hr {
+    width: 100%;
+    display: none;
+}
+
+.logo2, .langCh {
+    display: none;
+}
+.header .navbar a{
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    color: var(--black);
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border-bottom: .3rem solid var(--green);
+    transition: ease-in 0.2s;
+}
+
+.header .navbar .activePage {
+    width: 80px;
+    text-align: center;
+    margin-left: 5px;
+    color: var(--white);
+    background: var(--green);
+    border: .3rem solid gray;
+    border-radius: 5px;
+}
+
+.followusbox2, .followus2 {
+    display: none;
+} 
+
+.headerInfo {
+    float: right;
+    display: flex;
+}
+
+.searchWrap {
+    position: relative;
+    left: auto;
+    top: auto;
+    float: left;
+    width: 356px;
+    margin-right: 22px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    padding-right: 5px;
+    border: 1px solid var(--black);
+    height: 100%;
+}
+
+.searchbar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    font-size: 15px;
+    height: 100%;
+    padding-left: 10px;
+}
+
+::placeholder {
+    padding-left: 15px;
+}
+
+.searchbar button img {
+    width: 25px;
+}
+
+.searchbar button {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    cursor: pointer;
+}
+
+.searchbar button:hover {
+    background: var(--green);
+}
+
+.searchWrap a {
+    color: #808080;
+    background: transparent;
+}
+
+.searchWrap a i {
+    vertical-align: middle;
+}
+
+.langChange {
+    margin-left: 0;
+    padding-left: 0;
+    float: left;
+    position: relative;
+    padding: 23px 22px 22px;
+    border-left: 1px solid #d7d7d7;
+    margin-top: 0;
+}
+
+.langChange>a {
+    font-size: 16px;
+    color: var(--green);
+    font-family: 'Quicksand', 'sans-serif';
+}
+
+.langChange>a i {
+    vertical-align: middle;
+    color: #808080;
+    font-size: 18px;
+}
+
+.langList {
+    position: absolute;
+    top: 70px;
+    left: -4px;
+    width: 100px;
+    color: var(--black);
+    background: var(--white);
+    box-shadow: none;
+    border-radius: 2px;
+    padding: 5px;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.langChange:hover .langList {
+    display: block;
+}
+
+li {
+    display: block;
+}
+
+.langList .activeLang {
+    background: var(--green);
+    color: #fff;
+    text-align: center;
+}
+
+.langList a {
+    display: block;
+    font-size: 16px;
+    color: var(--black);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    padding: 10px 14px;
+    text-align: center;
+}
+
+.langList li:nth-child(2):hover,.langList li:nth-child(3):hover {
+    background-color: #d6cfcf;
+}
+
+a {
+    text-decoration: none;
+}
+
+.userLogin {
+    position: relative;
+    left: auto;
+    top: auto;
+    float: left;
+    width: auto;
+    vertical-align: middle;
+}
+
+.userLogin>a:hover{
+    color: #fff;
+    transition: 0ms;
+}
+
+.userLogedOut:hover{
+    background-color: var(--green);
+}
+
+.userLogin .userLogedOut {
+    top: auto;
+    line-height: 69px;
+    display: block;
+    padding: 0 22px;
+    border-left: 1px solid #f4f4f4;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.rt_AppBtn2 {
+    display: none;
+}
+
+.rt_AppBtn {
+    float: left;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 5px;
+    top: auto;
+}
+
+.rt_AppBtn a {
+    font-size: 12px;
+    padding: 8px 8px 8px 24px;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    display: inline-block;
+    background-color: var(--green);
+    color: #fff;
+    display: block;
+    margin-right: 18px;
+    font-family: 'LatoXBold';
+}
+
+.rt_AppBtn a svg {
+    position: absolute;
+    font-size: 20px;
+    left: 8px;
+    top: 12px;
+}
+
+/**** header ends here ****/
+
+
+/**** ProfileBG starts here ****/
+
+.wrapper {
+    margin-top: 70px;
+    background-image: linear-gradient(rgb(4,9,30,0.5),rgb(4, 9, 30,0.5)), url(../image/profileBG.jpg);
+}
+.wrapper .profileBG {
+    width: 100vw;
+    height: 300px;
+    z-index: 1;
+}
+
+.wrapper .profileBG .POuterBox {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.wrapper .profileBG .POuterBox  .InnerContainer {
+    width: 100%;
+    height: 100%;
+    padding: 45px 0;
+    background: transparent;
+}
+
+.PInnerBox {
+    width: 1200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .profileBG .POuterBox  .InnerContainer.PInnerbox .poetdetails {
+    position: relative;
+}
+
+#PD1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--green);
+    border-radius: 50%;
+    overflow: hidden;
+}
+#PD2 {
+    position: relative;
+    padding-left: 15px;
+    padding-top: 40px;
+    left: 200px;
+    width: 1000px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.poetname h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.poetdetails p  {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.poetdetails p .fas, .poetdetails p .bx {
+    margin-right: 4px;
+}
+
+
+/**** ProfileBG ends here ****/
+
+/**** shersection starts here ****/
+
+.outerPage {
+    width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outerPage .mainContainer {
+    width: 100%;
+}
+
+.outerPage .mainContainer .heading {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.outerPage .mainContainer .heading h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--black);
+    border-bottom: 3px solid var(--green);
+    display: inline;
+}
+
+.outerPage .mainContainer .sherContainer .sherBox {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.outerPage .mainContainer .sherContainer .sherBox p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--black);
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    word-spacing: .25px;
+    vertical-align: baseline;
+    text-align: center;
+    text-justify: auto;
+    width: 95%;
+}
+
+.outerPage .mainContainer .sherContainer .sherBox p span {
+    font-size: 21px;
+    line-height: 2;
+    display: inline-block;
+    padding: 0 0 0 4px;
+    cursor: pointer;
+    border-radius: 3px;
+    white-space: pre;
+    font-family: 'Laila', sans-serif;
+}
+
+.outerPage .mainContainer .sherContainer .sherBox a {
+    color: var(--green);
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'merriweatherheavy','NotoDevanagari','NotoNastaliqUrdu';
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.outerPage .mainContainer .sherContainer .sherBox a:hover {
+    text-decoration: underline;
+}
+
+.outerPage .mainContainer .sherContainer .sherBox p span:hover {
+    background-color: #c9e6db;
+}
+
+
+
+/**** shersection ends here ****/
+
+/**** footer starts here ****/
+
+.paddingBT {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer {
+    background-color: #88b9a8;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 0;
+}
+
+.contactSocial {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.quicklinks {
+    flex-basis: 40%;
+    text-align: left;
+    align-items: center;
+}
+
+.quicklinks .smallheading {
+    margin-bottom: 42px;
+}
+
+.quicklinks a {
+    display: block;
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.quicklinks a:hover {
+    text-decoration: underline;
+}
+
+.quicklinks a i {
+    padding-right: .5rem;
+}
+
+.contactform {
+    flex-basis: 60%;
+}
+
+.contactform .smallheading {
+    margin-bottom: 42px;
+}
+
+.contactform form {
+    width: 100%;
+}
+
+.contactform form input, form textarea{
+	width: 100%;
+	border: 0;
+	outline: none;
+	background: var(--white);
+	padding: 15px;
+	margin: 15px 0;
+	color:var(--green);
+	font-size: 18px;
+	border-radius: 6px;
+}
+
+.btnField {
+    text-align: right;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.submitFormBtn {
+    max-width: 206px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'LatoXRegular','NotoDevanagariRegular','MehrNastaliqRegular';
+    line-height: 46px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--green);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+.submitFormBtn:hover {
+    color: #fff;
+}
+
+.btnField img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.connectbox {
+    width: 100%;
+    background: #54a78a;
+    padding-top: 20px;
+}
+
+.followusbox {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.followus, .downloads {
+    flex-basis: 50%;
+    padding-bottom: 5px;
+}
+.followus .smallheading {
+    margin-bottom: 42px;
+}
+
+.followus a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--black);
+    margin: 0 .3rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.followusbox .followus a:nth-of-type(1):hover {
+    background: #4267B2;
+    color: var(--black);
+}
+
+.followusbox .followus a:nth-of-type(2):hover {
+    background: #00acee;
+    color: var(--black);
+}
+
+.followusbox .followus a:nth-of-type(3):hover {
+    background: #FF0000;
+    color: var(--black);
+}
+
+.followusbox .followus a:nth-of-type(4):hover {
+    background: #cd62db;
+    color: var(--black);
+}
+
+.followusbox .followus a:last-child:hover {
+    background: #c8232c;
+    color: var(--black);
+}
+
+.downloads .smallheading {
+    margin-bottom: 20px;
+}
+
+.downloads a img {
+    height: 70px;
+}
+
+.footerSecondaryNav {
+    margin-bottom: 0;
+    background: var(--green);
+}
+
+.fsnContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 5px 16px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.ptcBox, p {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.ptcBox {
+    text-align: left;
+}
+
+.ptcBox a {
+    text-decoration: none;
+    color: #000;
+    word-spacing: 3px;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.ptcBox a:hover{
+    text-decoration: underline;
+}
+
+.fsnContainer p {
+    text-align: right;
+    color: #000;
+    word-spacing: 3px;
+    font-size: 13px;
+}
+
+/**** footer ends here ****/
+
+
+
+/********** Large devices only **********/
+
+@media (min-width: 1600px) and (max-width: 1740px) {
+    .header .navbar {
+        padding: 0 10px 0 10px;
+    }
+    .header .navbar a{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    } 
+    .header .navbar a:nth-child(8), .header .navbar a:last-child {
+        display: none;
+    }
+    .searchWrap {
+        width: 400px;
+    }
+    .userLogin {
+        cursor: pointer;
+    }
+    
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+    .header .navbar {
+        padding: 0 10px 0 10px;
+    }
+    .header .navbar a{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    } 
+    .header .navbar a:nth-child(7),.header .navbar a:nth-child(8), .header .navbar a:last-child {
+        display: none;
+    }
+    .searchWrap {
+        width: 400px;
+    }
+    .userLogin {
+        cursor: pointer;
+    }
+    
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .header .navbar {
+        padding: 0 10px 0 10px;
+    }
+    .header .navbar a{
+        font-size: 1.5rem;
+        margin-right: 5px;
+    } 
+    .header .navbar a:nth-child(6),.header .navbar a:nth-child(7),
+    .header .navbar a:nth-child(8), .header .navbar a:last-child {
+        display: none;
+    }
+    .searchWrap {
+        width: 360px;
+    }
+    .userLogin {
+        cursor: pointer;
+    }
+    
+}
+@media (min-width: 1060px) and (max-width: 1199px) {
+    .header .navbar {
+        padding: 0 10px 0 10px;
+    }
+    .header .navbar a{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    } 
+    .header .navbar a:nth-child(4), .header .navbar a:nth-child(5),
+    .header .navbar a:nth-child(6),.header .navbar a:nth-child(7),
+    .header .navbar a:nth-child(8), .header .navbar a:last-child {
+        display: none;
+    }
+    .searchWrap {
+        width: 250px;
+    }
+    .userLogin {
+        cursor: pointer;
+    }
+
+    .wrapper { 
+        width: 100vw;
+    }
+
+    .PInnerBox {
+        width: 100%;
+    }
+    
+    #PD2 {
+        width: 800px; 
+    }
+
+    .outerPage {
+        width: 1000px;
+    }
+
+    .HearAboutJaun .embedVideo {
+        width: 300px;
+        height: 200px;
+    }
+
+}
+
+   /********** Medium devices only **********/
+@media (max-width: 1059px){
+    .primaryHeader {
+        margin-left: 15px;
+    }
+    .primaryHeader img {
+        width: 125px;
+        height: 30px;
+    }
+    #menu-icon, #menu-icon2 {
+        display: block;
+    }
+    .header .navbox {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--green);
+        padding: 22px 16px;
+        z-index: 1;
+        transition: left 0.5s;
+    }
+
+    
+    .header .navbox .logo2 {
+        display: block;
+        border-bottom: 0.2px solid gray;
+        height: 50px;
+    }
+    .header .navbox .logo2 img {
+        display: block;
+        margin: 0 auto;
+        height: 45px;
+    }
+    
+    .header .navbox .langCh {
+        display: block;
+        margin: 30px 0;
+        height: 65px;
+        border-bottom: 0.2px solid gray;
+    }
+    .header .navbox .langCh ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .header .navbox .langCh ul a {
+        text-decoration: none;
+        margin-left: 10px;
+        width: 100px;
+    }
+    .header .navbox .langCh ul li {
+        color: var(--white);
+        width: 100px;
+        height: 40px;
+        border: 2px solid var(--white);
+        border-radius: 3px;
+        margin-left: 10px;
+        word-spacing: 5px;
+        text-align: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    
+
+    .langCh .activeLang {
+        background: #08b108;
+        color: #fff;
+        text-align: center;
+    }
+
+    .rt_AppBtn2 {
+        display: block;
+        margin-left: 5px;
+        top: auto;
+    }
+    
+    .rt_AppBtn2 a {
+        font-size: 18px;
+        padding: 4px 4px;
+        border: 1px  solid var(--white);
+        border-radius: 4px;
+        display: flex;
+        background-color: var(--green);
+        color: #fff;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'LatoXBold';
+        justify-content: center;
+    }
+    .rt_AppBtn2 a:hover {
+        border: 1px  solid grey;
+        background-color: var(--white);
+        color: var(--green);
+    }
+
+    .header .navbox .navbar {
+        margin-left: 0;
+        margin-top: 10px;
+        padding-left: 10px;
+        text-align: center;
+        height: 60%;
+        width: 50%;  
+    }
+    .header .navbox .navbar a {
+        display: flex;
+        font-size: 18px;
+        line-height: 25px;
+        width: 100%;
+        margin-left: 5px;
+        padding-left: 5px;
+        float: left;
+        color: var(--white);
+        border-bottom: 1px solid grey;
+    }
+
+    .header .navbox .navbar .activePage {
+        display: flex;
+        font-size: 18px;
+        width: 100%;
+        margin-left: 5px;
+        float: left;
+        color: var(--white);
+        background: #08b108;
+        border: 1px solid var(--white);
+    }
+    
+    .navbox .followusbox2 {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 16px;
+        right: 16px;
+        width: 1059;
+        height: 50px;
+        background-color: transparent;
+        border-top: 0.2px solid grey;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbox .followusbox2 .followus2 {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    .navbox .followusbox2 .followus2 a {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+        color: var(--black);
+        background: var(--white);
+        margin: 5px .3rem;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .navbox .followusbox2 .followus2 a:nth-of-type(1) {
+        margin-left: 40%;
+    }
+    
+    .navbox .followusbox2 .followus2 a:nth-of-type(1):hover {
+        background: #4267B2;
+        color: var(--white);
+    }
+    
+    .navbox .followusbox2 .followus2 a:nth-of-type(2):hover {
+        background: #00acee;
+        color: var(--white);
+    }
+    
+    .navbox .followusbox2 .followus2 a:nth-of-type(3):hover {
+        background: #FF0000;
+        color: var(--white);
+    }
+    
+    .navbox .followusbox2 .followus2 a:nth-of-type(4):hover {
+        background: #cd62db;
+        color: var(--white);
+    }
+    
+    .navbox .followusbox2 .followus2 a:last-child:hover {
+        background: #c8232c;
+        color: var(--white);
+    }
+    .searchWrap {
+        width: 210;
+    }
+    .userLogin {
+        display: none;
+    }
+    .langChange {
+        display: none;
+    }
+    
+    .wrapper { 
+        width: 100vw;
+    }
+
+    .PInnerBox {
+        width: 100%;
+    }
+    
+    #PD2 {
+        width: 700px; 
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1059px) {
+    
+    .outerPage {
+        width: 90%;
+    }
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrapper { 
+        width: 100vw;
+    }
+
+    .PInnerBox {
+        width: 100%;
+    }
+
+    #PD2 {
+        width: 70%; 
+    }
+    .outerPage {
+        width: 95%;
+    }
+     
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    
+    .smallheading , .smallHeading{
+            font-size: 14px;
+            color: #4c4c4c;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 42px;
+            line-height: 1;
+    }
+    .footer .downloads a img {
+        height: 50px;
+        width: 150;
+    }
+
+    .wrapper { 
+        width: 100vw;
+    }
+
+    .PInnerBox {
+        width: 100%;
+    }
+
+    
+    #PD2 {
+        width: 65%; 
+    }
+    .outerPage {
+        width: 95%;
+    }
+     
+}
+
+@media (min-width: 480px) and (max-width: 696px) {
+    .header {
+        height: 42px;
+        width: 100vw;
+    }
+    .searchWrap {
+        display: none;
+    }
+
+    .wrapper { 
+        margin-top: 41px;
+        width: 100vw;
+    }
+
+    .wrapper .profileBG {
+        height: 215px;
+    }
+
+    .POuterBox,.PInnerBox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper .profileBG .POuterBox  .InnerContainer {
+        padding: 30px 0 0 0;
+        height: 215px;
+    }
+    
+
+    .poetdetails img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+
+    #PD1 {
+        width: 150px;
+        height: 150px;   
+    }
+    
+    #PD2 {
+       padding-top: 0;
+       left: 160px;
+    }
+
+    .outerPage {
+        width: 98%;
+    }
+
+    .outerPage .mainContainer .sherContainer .sherBox p {
+        font-size: 14px;
+    }
+     
+    .outerPage .mainContainer .sherContainer .sherBox p span {
+        font-size: 16px;
+    }
+
+    .footerSecondaryNav .fsnContainer .ptcBox a:nth-child(1) {
+        padding-left: 0;
+    }
+    
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+    .primaryHeader {
+        margin-left: 25px;
+    }
+    .header {
+        width: 100vw;
+    }
+    .header .primaryHeader {
+        padding-left: 5px;
+    }
+    .primaryHeader img {
+        width: 120px;
+    }
+    .searchWrap {
+        display: none;
+    }
+    .rt_AppBtn {
+        height: 30px;
+        margin: 2px 0;
+    }
+    .rt_AppBtn a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .rt_AppBtn a svg {
+        position: absolute;
+        font-size: 20px;
+        left: 8px;
+        top: 10px;
+    }
+
+
+    .wrapper { 
+        margin-top: 33px;
+        width: 100vw;
+    }
+
+    .wrapper .profileBG {
+        height: 215px;
+    }
+
+    .POuterBox,.PInnerBox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper .profileBG .POuterBox  .InnerContainer {
+        padding: 30px 0 0 0;
+        height: 215px;
+    }
+    
+
+    .poetdetails img {
+        position: relative;
+        width: 130px;
+        height: 130px;
+    }
+
+    .poetdetails p {
+        font-size: 14px;
+    }
+
+    #PD1 {
+        width: 130px;
+        height: 130px;
+        margin-top: 20px;
+    }
+    
+    #PD2 {
+       padding-top: 0;
+       left: 140px;
+    }
+
+    .outerPage {
+        width: 100%;
+    }
+
+    .outerPage .mainContainer .sherContainer .sherBox{
+        width: 100%;
+    }
+
+    .outerPage .mainContainer .sherContainer .sherBox p {
+        width: 100%;
+        font-size: 14px;
+        margin: 0;
+    }
+     
+    .outerPage .mainContainer .sherContainer .sherBox p span {
+        font-size: 13px;
+    }
+
+    .outerPage .mainContainer .sherContainer .sherBox a {
+
+        font-size: 12px;
+    }
+
+    .outerPage .mainContainer .sherContainer .sherBox:nth-child(23) p:nth-child(1) span:nth-child(1),
+    .outerPage .mainContainer .sherContainer .sherBox:nth-child(23) p:nth-child(2) span:nth-child(1) {
+        left: 0;
+    }
+
+    .smallHeading, .smallheading {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .contactSocial {
+        display: block;
+    }
+
+    .quicklinks .smallheading, .contactform .smallheading{
+        margin-bottom: 35px;
+        margin-top: 5px;
+    }
+
+    .followus a {
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .downloads img {
+        width: 110px;
+    }
+
+    .fsnContainer .ptcBox a {
+        font-size: 12px;
+    }
+
+    .navbox  .logo2 {
+        text-align: center;
+    }
+
+    .navbox  .logo2 img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbox .langCh ul {
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .navbox .followusbox2 .followus2 {
+        text-align: center;
+    }
+
+    .navbox .followusbox2 .followus2 a:nth-child(1){
+        margin-left: 3px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
