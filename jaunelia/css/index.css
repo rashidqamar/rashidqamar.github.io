@@ -824,7 +824,62 @@ a {
 
 /**** edit's choice ends here ****/
 
+/**** img shayari starts here ****/
 
+.imgShayari {
+    background: #fff;
+    z-index: 1;
+}
+
+.ISContainer {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 auto;
+    margin: auto;
+}
+
+.outerBox {
+    width: 660px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.ISBox {
+    width: 660px;
+    height: 525px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-preview {
+    flex-basis: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-preview img, .large-preview img {
+    border-radius: 5px;
+}
+
+.outerBox button {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background: var(--green);
+    border: 0.5px solid var(--black);
+    border-radius: 7px;
+}
+
+.outerBox button a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--white);
+}
+
+
+/**** img shayari ends here ****/
 
 /**** footer starts here ****/
 
@@ -1431,6 +1486,48 @@ a {
             margin-bottom: 42px;
             line-height: 1;
     }
+
+    .ISContainer {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 auto;
+        margin: auto;
+    }
+    
+    .outerBox {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    
+    .ISBox {
+        width: 100%;
+        height: 480px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .small-preview {
+        flex-basis: 115px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .large-preview {
+        flex-basis: 485px;
+    }
+
+    .small-preview img {
+        width: 110px;
+    }
+
+    .large-preview img {
+        width: 480px;
+    }
+
+
     .footer .downloads a img {
         height: 50px;
         width: 150;
@@ -1474,6 +1571,57 @@ a {
         border-radius: 3px;
         white-space: pre;
         font-family: 'Laila', sans-serif;
+    }
+
+    .ISContainer {
+        width: 100%;
+        max-width: 450px;
+        padding: 0 auto;
+        margin: auto;
+    }
+    
+    .outerBox {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    
+    .ISBox {
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .small-preview {
+        flex-basis: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .large-preview {
+        flex-basis: 320px;
+    }
+
+    .small-preview img {
+        width: 70px;
+    }
+
+    .large-preview img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .outerBox button {
+        width: 80px;
+        height: 30px;
+    }
+    
+    .outerBox button a {
+        font-size: 14px;
     }
 }
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
@@ -1659,6 +1807,59 @@ a {
         margin-top: 8px;
         font-size: 13px;
     }
+
+    .ISContainer {
+        width: 100%;
+        max-width: 400px;
+        padding: 0 auto;
+        margin: auto;
+    }
+    
+    .outerBox {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    
+    .ISBox {
+        width: 350px;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .small-preview {
+        flex-basis: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .large-preview {
+        flex-basis: 280px;
+    }
+
+    .small-preview img {
+        width: 70px;
+    }
+
+    .large-preview img {
+        width: 275px;
+        height: 300px;
+    }
+
+    .outerBox button {
+        width: 80px;
+        height: 30px;
+    }
+    
+    .outerBox button a {
+        font-size: 14px;
+    }
+
+
     .contactSocial {
         display: block;
     }
