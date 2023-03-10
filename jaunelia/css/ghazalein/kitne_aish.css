@@ -485,7 +485,7 @@ a {
 }
 
 .sherBox:nth-child(6) p:nth-child(1) {
-    word-spacing: 4px;
+    word-spacing: 2.5px;
 }
 .sherBox:nth-child(6) p:nth-child(2) {
     word-spacing: 6px;
@@ -1185,7 +1185,7 @@ hr {
     }
 
     .sherBox:nth-child(6) p:nth-child(1) {
-        word-spacing: 2px;
+        word-spacing: 1px;
     }
     .sherBox:nth-child(6) p:nth-child(2) {
         word-spacing: 3.5px;
@@ -1331,7 +1331,7 @@ hr {
     }
 
     .sherBox:nth-child(6) p:nth-child(1) {
-        word-spacing: 2px;
+        word-spacing: 1px;
     }
     .sherBox:nth-child(6) p:nth-child(2) {
         word-spacing: 3px;
