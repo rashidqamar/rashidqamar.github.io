@@ -1351,6 +1351,10 @@ hr {
     .lowerSection .nextBox  {
         display: block;
     }
+    .lowerSection .preBox span:nth-child(1),
+    .lowerSection .nextBox span:nth-child(1)  {
+        font-size: 20px;
+    }
     .lowerSection .preBox span:nth-child(2),
     .lowerSection .nextBox span:nth-child(2)  {
         font-size: 14px;
