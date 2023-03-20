@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaunElia-The Unconventional Poet</title>
+    <script src="https://kit.fontawesome.com/0816e10b95.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/icon" href="image/Icon1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">   
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script type="text/javascript" src="js/logic.js"></script>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <!-- header section starts here  -->
+
+    <header class="header">
+
+        <div class="primaryHeader headerMenuOpen">
+            <div class="main">
+                <i class="bx bx-menu" id="menu-icon" onclick="openmenu()"></i>
+                
+            </div>
+            <a href="index.html" class="logo">
+                <img data-src="image/logo-black.png"  alt="Best poetry resource of Jaun Elia"  src="image/logo-black.png">
+            </a>
+        </div>
+            
+            <div class="navbox" id="sidemenu">
+                <i class="bx bx-plus-medical" id="menu-icon2" onclick="closemenu()"></i>
+                <a href="index.html" class="logo2">
+                    
+                    <img data-src="image/logo-white.png"  alt="Best poetry resource of Jaun Elia"  src="image/logo-white.png">
+                </a>
+                
+                <div class="langCh">
+                    <ul>
+                        <a href="#"><li class="activeLang">ENG</li></a>
+                        <a href="#"><li>HIN</li></a>
+                        <a href="#"><li>URD</li></a>
+                    </ul>
+                </div>
+                <div class="rt_AppBtn2">
+                    <a href="#">Donate</a>
+                </div>
+                
+                <nav class="navbar">
+                
+                <a class="activePage" href="profile.html" target="_self">PROFILE</a>
+                <a href="ghazal.html" target="_self">GHAZAL</a>
+                <a href="nazm.html" target="_self">NAZM</a>
+                <a href="sher.html" target="_self">SHER</a>
+                <a href="marsiya.html" target="_self">MARSIYA</a>
+                <a href="qita.html" target="_self">QITA</a>
+                <a href="imgshayari.html" target="_self">IMG SHAYARI</a>
+                <a href="videos.html" target="_self">VIDEOS</a>
+                <a href="books.html" target="_self">BOOKS</a>
+                
+                </nav>
+                <div class="followusbox2">
+                    <div class="followus2">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="headerInfo">
+                <div class="searchWrap">
+                    <form action="" class="searchbar">
+                        <input type="text" placeholder="Search" name="q">
+                        <button type="submit"><img src="image/search.png"></button>
+                    </form>
+                </div>
+
+                <div class="langChange">
+                    <a href="" ><span id="langHdg">ENG</span> <i class="fa-light fas fa-angle-down"></i></a>
+                    <ul class="langList">
+                        <li><a class=" activeLang" href="#">ENG</a></li>
+                        <li><a class="" href="#">HIN</a></li>
+                        <li><a class="" href="#">URD</a></li>
+                    </ul>
+                </div>
+
+                <div class="userLogin"><a href="#" class="userLogedOut">LOG IN</a></div>
+
+            </div>
+    
+
+                <!--App button Code here-->
+                <div class="rt_AppBtn">
+                    <a href="#">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 546 1024">
+                            <path fill="#fff" d="M170.667 0h204.8c94.257 0 170.667 76.41 170.667 170.667v477.867c0 94.257-76.41 170.667-170.667 170.667h-204.8c-94.257 0-170.667-76.41-170.667-170.667v-477.867c0-94.257 76.41-170.667 170.667-170.667zM170.667 68.267c-56.554 0-102.4 45.846-102.4 102.4v477.867c0 56.554 45.846 102.4 102.4 102.4h204.8c56.554 0 102.4-45.846 102.4-102.4v-477.867c0-56.554-45.846-102.4-102.4-102.4h-204.8zM238.933 682.667c-18.851 0-34.133-15.282-34.133-34.133s15.282-34.133 34.133-34.133h68.267c18.851 0 34.133 15.282 34.133 34.133s-15.282 34.133-34.133 34.133h-68.267z"></path>
+                        </svg> Get App
+                    </a>
+                </div>
+                <!--App button Code here-->
+
+    </header>
+
+    <!-- header section ends here  -->
+
+
+    <!--  profileBG starts here  -->
+
+    <section class="wrapper">
+    <div class="profileBG">
+        <div class="POuterBox">
+            <div class="InnerContainer">
+            <div class="PInnerBox">
+                <div class="poetdetails" id="PD1">
+                    <a><img src="image/profile.png"></a>
+                </div>
+                <div class="poetdetails" id="PD2">
+                    
+                        <div class="poetname">
+                            <h2>Jaun Elia</h2>
+                        </div>
+                        <p>
+                            <span class="poetdate"><i class="fas fa-solid fa-calendar-day"></i>1931 - 2002</span>
+                            <span class="placeSeparator">|</span>
+                            <span class="poetplace"><i class='bx bxs-location-plus'></i>Karachi, Pakistan</span>
+                        </p>
+                    
+                    <p>One of the most prominent modern Pakistani poets, popular for his unconventional ways.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!--  profileBG ends here  -->
+
+
+    <!--  profilesection starts here  -->
+
+    <section class="paddingBT">
+        <div class="outerPage">
+            <h2>profile of jaun elia</h2>
+            <div class="profileDesc">
+                <p><span class="span1">Real Name:</span><span class="span2">Syed Hussain Jaun Asghar Naqvi</span></p>
+                <p><span class="span1">Pen Name:</span><span class="span2">'Jaun'</span></p>
+                <p><span class="span1">Born:</span><span class="span2">14 Dec 1931 | Amroha, Uttar Pradesh</span></p>
+                <p><span class="span1">Died:</span><span class="span2">08 Nov 2002 | Karachi, Pakaistan</span></p>
+                <p><span class="span1">Relatives:</span><span class="span2">Irfan Sattar (Disciple), Rais Amrohvi (Brother), Zahida Hina (Wife)</span></p>
+            </div>
+            <div class="introSher">
+                <p>
+                    <span>Ham</span>
+                    <span>jo</span>
+                    <span>hain</span>
+                    <span>jaun elia</span>
+                    <span>hain</span>
+                    <span>janab</span>
+            
+                </p>
+                <p>
+                    <span>Iska</span>
+                    <span>behad</span>
+                    <span>lihaz</span>
+                    <span>kijiyega</span>
+                    
+                </p>
+            </div>
+            <div class="aboutPoet">
+                <p>
+                    Syed Jaun Asghar (1931-2002), popularly known as Jaun Elia, was born in Amroha where he received his early education under the guidance of his father, 
+                    Shafiq Hasan Elia. He acquired the degrees of Adeeb Kamil (Urdu), Kamil (Persian), and Fazil (Arabic). He migrated from India in 1957 and settled in Karachi 
+                    where he worked at the Ismailia Association of Pakistan supervising writing and compilation from 1963 to 1968. Following this, he remained associated with the 
+                    Urdu Dictionary Board. He also edited Aalami Digest with Zahida Hena.
+                    <br>
+                    <br>
+                    Jaun Elia was deeply interested in the disciplines of history, philosophy, and religion. This gave a certain touch of otherness to his personality and poetry. 
+                    His poetry is remarkable for its effortless expression and immediacy of appeal. While he published his first anthology Shaayed (1991) during his lifetime, other 
+                    collections Yaani (2003), Gumaan (2004), Lekin (2006), Goyaa (2008) and a book in prose entitled Farmood (2008) were published posthumously. He had also collected 
+                    his letters to Zahida Hena to whom he was married but they had separated later. Elia had also written another book in prose called Rumooz and translated Kitab-ut-Tawwaseen 
+                    and Jauhar-e-Salqui by Mansoor Hallaj which remain unpublished. The government of Pakistan honoured him with the prestigious award of excellence for his services to literature.
+                </p>
+            </div>
+            <div class="remarksPage">
+                <h3 class="smallheading">Remarks Of Other People on JAUN ELIA</h3>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Ye Gugtagu Karte Hain Sher Mein Aur Mere Nazdeek Ye Apni 
+                            Tarz Ke Waahid Shayar Hain Urdu Zaban Mein;
+                            Hindustan Pakistan Kahin Bhi, Aur Mere Bahot Pasandida. 
+                            Is Qadar Mushkil Tarz Hai Inka, K Har Ek Ke Bas Ka Bhi Nahi Hai."</p>
+                    </div>
+                        <span>Majrooh Sultanpuri</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Zindagi Ke Gunah Ko Jaun Ne Badi Lazzat Ke Saath Jiya 
+                            Aur Bahot Kam Shayaron Ko Ye Naseeb Hota Hai K Wo Zindagi 
+                            Ko Is Tarah Se Jiye Aur Uski Lazzat Mahsus Kare. Jaun Ki Fakeeri
+                            Jaun Ko Jaun Auliya Banati Hai. Jaun Mere Lafzon Mein Khudrang Shayar Hai.
+
+                            <br>Zindagi Ke Har Utar-Chadhao Ko, Har Lamhe Ki Hararat Ko, Soch Ki Har Girah Ko,
+                            Khala Ki Har Gunj Ko Aur Shor Ki Har Khamoshi Ko; Na Sirf Shayari Me Dhaalna, Balkeh 
+                            Apne Saama'in Ko Enjoy Karana; Jaun Kehlata Hai."</p>
+                    </div>
+                        <span>Dr. Kumar Vishwas</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Hum Ko Jaun Elia Sahab Bahot Pasand Hain, Wo Teekhe Hain Bade.
+                            Unka Ek Sher Bahot Pasand Hai Mujhe:
+                            <br>Shayad Mujhe Kisi Se Mohabbat Nahi Hui  <br>  Lekin Yaqeen Sab ko Dilata Raha Hoon Mai."</p>
+                    </div>
+                        <span>Zakir Khan</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Jaun Elia Hamare Bade Azeez Dost The. Ek Dafa Mai Karachi Me 
+                            Mushayere K liye Gaya Tha Tab Jaun Hindustan Aaye Hue The, Jab Mai 
+                            Lauta To Jaun Se Mulaqat Pe Unhone Rote Hue Kaha K Yaar Mai Bahot 
+                            Pareshan Tha K Rahat Ka Mere Bina Pakistan Me Kya Ho Raha Hoga."</p>
+                    </div>
+                        <span>Dr. Rahat Indori</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Jab Koi Bada Shayar Kisi Lafz Ko Chhu Leta Hai To Uske Maani Bhi Badal Jate Hain.
+                            Hum Khud Ko Khushqismat Tasavvur Karte Hain K Hum Ko Jaun Elia Ki SohBat Hasil Hai.
+                            Jinka Kalam Khud Unki Zindagi Ka Sarapa Ban Gaya Hai."</p>
+                    </div>
+                        <span>Dr. Malikzada Manzoor</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Kal Jab Muarrikh(Historian), Adbi Riwayaat Ki Taarikh Likhega, To Ye Nazm 'SAZA' Usko Behad Pareshan Karegi.
+                            <br>Mai Maanta Hoon K Jab Tak Insan Tajurbaat Ki Waadiyon Mein Seene K Bal Na Reng Le, Tab Tak Wo Jaun Elia Nahi Ban Sakta."</p>
+                    </div>
+                        <span>Saleem Jafri</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Jaun Elia Ek Shakhs Ka Naam Nahi Tha, Ek Shakhsiyat Ka Naam Tha.
+                            <br>Wo Shayar Nahi Tha, Wo Deewanapan Sameta Hua Ek Sehra(Desert) Tha; 
+                            Jo Shehron Ko Abaad Karta Tha, Aur Khud Viraan Para Rehta Tha"</p>
+                    </div>
+                        <span>Munawwar Rana</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Bhai Jaun Ne Tanha Bahot Masroof Zindagi Guzari, Har Baat Ka Dukh Raha Unhe Bas Ek Baat Ki Khushi Rahi;
+                            Unhone Milli Aur Qoum-Parastana Shayari Nahi Ki. Farsi Aur Arbi Unke Bagal Me Aur Urdu Unke Jeb Me Thi.
+                            Kaash Unke Chahne Walon Ne Unki Shayari Ke Bajaye Unke Nasr Pe Dhyan Di Hoti, Shayari To Har Koi Samajh Leta 
+                            Hai Lekin Nasr Samajhne Ke Liye Padha-Likha Hona Zaroori Hai."</p>
+                    </div>
+                        <span>Anwar Masood</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Jab Ek Shayar Stage Par Sher Padhta Hai Tab Wo Apne Ehsasaat Ka Izhar Karta hai Aur 
+                            Log Usse Relate Karte Hain K Yaar Ye Pareshani To Meri Bhi Hai. Jaun Elia Is Chiz Ko 
+                            Ek Level Upar Le Gaye, Unhone Apne Zakhm, Apni Takleef, Apne Dukh Ko Itna Glorify Kiya
+                            K Logon Ko Tamanna Hone Lagi K Kaash Ye Barbaad Zindagi, Ye takleef-deh Zindagi Hamein 
+                            Bhi Naseeb Ho Jaye. Kaash Aise Zakhm Hamare Bhi Ho."</p>
+                    </div>
+                        <span>Ajmal Siddiqui</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Duniya Ka Sab Se Mushkil kaam Hai Khud Ko Daryaaft Karna, Aur Jab Ek Fankaar Khud Ko Daryaaft
+                            Kar Leta Hai To Uske Asar Me Baqi Sab Log Chhote Lagne Lagte Hain. Wo Akela Ho Jata Hai.
+                            <br>Jaun Ne Khud Ko Daryaaft Kar Liya Tha."</p>
+                    </div>
+                        <span>Dr. Zameer Akhtar Naqvi</span>
+                </div>
+                <div class="rpInner">
+                    <div class="pBox">
+                        <p>"Maqbool Hone Ke Baad Logon Ko Padhne Ka Waqt Nahi Milta Hai Aksar, Aur Isi Tarah Dimagh Ko Zang Lagne Lagti Hai.
+                            Lekin Jaun Ke Saath Aisa Nahi Tha, Wo Hamesha Kuch Na Kuch Padhte Rahte The."</p>
+                    </div>
+                        <span>Zehra Nigah</span>
+                </div>
+            </div>
+            <div class="HearAboutJaun">
+                <div class="heading"><h3 class="smallheading">Hear About JAUN ELIA</h3></div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QFxeWupSmzo" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QeTsIn3HcgI" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VnPa2t7Dx4g" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S8EGmJxpKXs" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JIWN-60qzRE" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lrDC_Z8bi50" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9dubYjJX5ZE" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o-cEXQXkQoQ" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_gzeGb4wx1c" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DlKB2i9F3u0" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6VHG9szeY3U" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RcPvk6qZ8Rc" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/e0F7tfiDv4I" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lXhC1i1cBD0" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GZ8qzzRz01o" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="embedVideo">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vvOAjH5K1bw" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  profilesection ends here  -->
+
+
+    <!--  Footer starts here --->
+
+    <footer class="footer paddingBT">
+        <div class="contactSocial">
+            <div class="quicklinks">
+                <h3 class="smallheading">Quick Links</h3>
+                <a href="profile.html" target="_self"><i class="fas fa-arrow-right"></i>profile</a>
+                <a href="ghazal.html" target="_self"><i class="fas fa-arrow-right"></i>ghazal</a>
+                <a href="nazm.html" target="_self"><i class="fas fa-arrow-right"></i>nazm</a>
+                <a href="sher.html" target="_self"><i class="fas fa-arrow-right"></i>sher</a>
+                <a href="marsiya.html" target="_self"><i class="fas fa-arrow-right"></i>marsiya</a>
+                <a href="qita.html" target="_self"><i class="fas fa-arrow-right"></i>qita</a>
+                <a href="imgshayari.html" target="_self"><i class="fas fa-arrow-right"></i>image shayari</a>
+                <a href="videos.html" target="_self"><i class="fas fa-arrow-right"></i>videos</a>
+                <a href="books.html" target="_self"><i class="fas fa-arrow-right"></i>books</a>
+            </div>
+            <div class="contactform">
+                <form action="">
+                    <h3 class="smallheading">Write to us your valuable review & query</h3>
+                    <input type="text" name="" placeholder="enter your name" id="" class="box">
+                    <input type="text" name="" placeholder="enter your number" id="" class="box">
+                    <textarea name="Message" rows="4" placeholder="Your message" class="box"></textarea>
+                    <div class="btnField">
+                        <a href="" value="SUBMIT" class="submitFormBtn"><img src="image/send.png" alt="send">SEND MESSAGE </a> 
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="connectbox">
+            <div class="followusbox">
+                <div class="followus">
+                    <h3 class="smallheading">follow us on</h3>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+                <div class="downloads">
+                    <h3 class="smallheading">Download Jaun elia app</h3>
+                    <a href=""><img src="image/downloadGP.png" alt="googlePlayStore"></a>
+                    <a href=""><img src="image/downloadAS.png" alt="AppStore"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerSecondaryNav">
+            <div class="fsnContainer">
+                <div class="ptcBox">
+                    <a href="">PRIVACY POLICY</a>
+                    <a href="">TERMS OF USE</a>
+                    <a href="">COPYRIGHT</a>
+                </div>
+                <p>© 2023 JaunElia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Footer ends here --->
+      
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+      
+      function openmenu(){
+        sidemenu.style.left= "0";
+    
+      }
+      function closemenu(){
+        sidemenu.style.left= "-100%";
+    
+      }
+    </script>
+     <script>
+
+                window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+            });
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+</body>
+</html>
