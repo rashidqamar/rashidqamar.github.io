@@ -1064,87 +1064,9 @@ a {
         font-size: 28px;
     }
 
-
-    .midSection .sherBox p {
-        width: 100%;
-        margin: 0;
-        font-size: 12px;
+    .innerbook {
+        text-align: center;
     }
-    .midSection .sherBox p span {
-        font-size: 14px;
-    }
-
-    .lowerSection {
-        display: block;
-    }
-
-    .lowerSection .preBox,
-    .lowerSection .nextBox  {
-        display: block;
-    }
-    .lowerSection .preBox span:nth-child(1),
-    .lowerSection .nextBox span:nth-child(1)  {
-        font-size: 20px;
-    }
-    .lowerSection .preBox span:nth-child(2),
-    .lowerSection .nextBox span:nth-child(2)  {
-        font-size: 14px;
-    }
-
-    .sherBox:nth-child(1) p:nth-child(1) {
-        word-spacing: 23px;
-    }
-
-    .sherBox:nth-child(2) p:nth-child(1) {
-        word-spacing: 18px;
-    }
-    .sherBox:nth-child(2) p:nth-child(2) {
-        word-spacing: 5px;
-    }
-
-    .sherBox:nth-child(3) p:nth-child(1) {
-        word-spacing: 14px;
-    }
-    .sherBox:nth-child(3) p:nth-child(2) {
-        word-spacing: 12px;
-    }
-
-    .sherBox:nth-child(4) p:nth-child(1) {
-        word-spacing: 28px;
-    }
-    .sherBox:nth-child(4) p:nth-child(2) {
-        word-spacing: 8px;
-    }
-
-    .sherBox:nth-child(5) p:nth-child(1) {
-        word-spacing: 13px;
-    }
-    .sherBox:nth-child(5) p:nth-child(2) {
-        word-spacing: 6px;
-    }
-
-    .sherBox:nth-child(6) p:nth-child(1) {
-        word-spacing: 7px;
-    }
-    .sherBox:nth-child(6) p:nth-child(2) {
-        word-spacing: 12px;
-    }
-
-    .sherBox:nth-child(7) p:nth-child(1) {
-        word-spacing: 8px;
-    }
-    .sherBox:nth-child(7) p:nth-child(2) {
-        word-spacing: 4.5px;
-    }
-
-    .sherBox:nth-child(8) p:nth-child(1) {
-        word-spacing: 14px;
-    }
-    .sherBox:nth-child(8) p:nth-child(2) {
-        word-spacing: 10px;
-    }
-
-
 
 
 
