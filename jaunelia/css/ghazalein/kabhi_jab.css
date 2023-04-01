@@ -452,39 +452,100 @@ a {
     background-color: #abc2ca;
 }
 
+
 .sherBox:nth-child(1) p:nth-child(1) {
     word-spacing: 10.5px;
 }
 .sherBox:nth-child(1) p:nth-child(2) {
-    word-spacing: 12.5px;
+    word-spacing: 35.5px;
 }
+
 
 .sherBox:nth-child(2) p:nth-child(1) {
-    word-spacing: 4.5px;
+    word-spacing: 6.3px;
 }
 .sherBox:nth-child(2) p:nth-child(2) {
-    word-spacing: 8.5px;
+    word-spacing: 13px;
 }
+
 
 .sherBox:nth-child(3) p:nth-child(1) {
-    word-spacing: 106px;
+    word-spacing: 11.5px;
 }
 .sherBox:nth-child(3) p:nth-child(2) {
-    word-spacing: 11px;
+    word-spacing: 12px;
 }
 
 
+.sherBox:nth-child(4) p:nth-child(1) {
+    word-spacing: 10px;
+}
 .sherBox:nth-child(4) p:nth-child(2) {
-    word-spacing: 6px;
+    word-spacing: 17px;
 }
+
 
 .sherBox:nth-child(5) p:nth-child(1) {
-    word-spacing: 12.5px;
+    word-spacing: 20.5px;
 }
 .sherBox:nth-child(5) p:nth-child(2) {
+    word-spacing: 7px;
+}
+
+.sherBox:nth-child(6) p:nth-child(1) {
+    word-spacing: 18px;
+}
+.sherBox:nth-child(6) p:nth-child(2) {
+    word-spacing: 15.5px;
+}
+
+
+.sherBox:nth-child(7) p:nth-child(1) {
+    word-spacing: 16.5px;
+}
+.sherBox:nth-child(7) p:nth-child(2) {
     word-spacing: 9px;
 }
 
+
+.sherBox:nth-child(8) p:nth-child(1) {
+    word-spacing: 7px;
+}
+.sherBox:nth-child(8) p:nth-child(2) {
+    word-spacing: 15.5px;
+}
+
+
+.sherBox:nth-child(9) p:nth-child(1) {
+    word-spacing: 10px;
+}
+.sherBox:nth-child(9) p:nth-child(2) {
+    word-spacing: 5.8px;
+}
+
+
+.sherBox:nth-child(10) p:nth-child(1) {
+    word-spacing: -4px;
+}
+.sherBox:nth-child(10) p:nth-child(2) {
+    word-spacing: 21.5px;
+}
+
+
+.sherBox:nth-child(11) p:nth-child(1) {
+    word-spacing: 6.5px;
+}
+.sherBox:nth-child(11) p:nth-child(2) {
+    word-spacing: 9.5px;
+}
+
+
+.sherBox:nth-child(12) p:nth-child(1) {
+    word-spacing: 4.2px;
+}
+.sherBox:nth-child(12) p:nth-child(2) {
+    word-spacing: 8px;
+}
 
 
 hr {
@@ -1109,6 +1170,9 @@ hr {
     .innerBox{
         padding: 0 10px;
     }
+    .upperSection {
+        padding-top: 10px;
+    }
     .upperSection h1 {
         font-size: 22px;
     }
@@ -1119,7 +1183,7 @@ hr {
         font-size: 14px;
     }
     .midSection .sherBox p span {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .lowerSection {
@@ -1140,37 +1204,99 @@ hr {
         font-size: 14px;
     }
 
+    
     .sherBox:nth-child(1) p:nth-child(1) {
-        word-spacing: 11px;
+        word-spacing: 5.5px;
     }
-
+    .sherBox:nth-child(1) p:nth-child(2) {
+        word-spacing: 22.3px;
+    }
+    
     
     .sherBox:nth-child(2) p:nth-child(1) {
-        word-spacing: 6.5px;
-    }
-    .sherBox:nth-child(2) p:nth-child(2) {
-        word-spacing: 11px;
-    }
-    
-    .sherBox:nth-child(3) p:nth-child(1) {
-        word-spacing: 110px;
-    }
-    .sherBox:nth-child(3) p:nth-child(2) {
-        word-spacing: 11.5px;
-    }
-    
-    .sherBox:nth-child(4) p:nth-child(1) {
         word-spacing: 2.8px;
     }
-    .sherBox:nth-child(4) p:nth-child(2) {
-        word-spacing: 7px;
+    .sherBox:nth-child(2) p:nth-child(2) {
+        word-spacing: 6.7px;
     }
     
+    
+    .sherBox:nth-child(3) p:nth-child(1) {
+        word-spacing: 7px;
+    }
+    .sherBox:nth-child(3) p:nth-child(2) {
+        word-spacing: 8.5px;
+    }
+    
+    
+    .sherBox:nth-child(4) p:nth-child(1) {
+        word-spacing: 5.5px;
+    }
+    .sherBox:nth-child(4) p:nth-child(2) {
+        word-spacing: 9px;
+    }
+    
+    
     .sherBox:nth-child(5) p:nth-child(1) {
-        word-spacing: 13.5px;
+        word-spacing: 12.3px;
     }
     .sherBox:nth-child(5) p:nth-child(2) {
-        word-spacing: 12.5px;
+        word-spacing: 3px;
+    }
+    
+    .sherBox:nth-child(6) p:nth-child(1) {
+        word-spacing: 11.5px;
+    }
+    .sherBox:nth-child(6) p:nth-child(2) {
+        word-spacing: 9.5px;
+    }
+    
+    
+    .sherBox:nth-child(7) p:nth-child(1) {
+        word-spacing: 11px;
+    }
+    .sherBox:nth-child(7) p:nth-child(2) {
+        word-spacing: 4.5px;
+    }
+    
+    
+    .sherBox:nth-child(8) p:nth-child(1) {
+        word-spacing: 3px;
+    }
+    .sherBox:nth-child(8) p:nth-child(2) {
+        word-spacing: 8.3px;
+    }
+    
+    
+    .sherBox:nth-child(9) p:nth-child(1) {
+        word-spacing: 5px;
+    }
+    .sherBox:nth-child(9) p:nth-child(2) {
+        word-spacing: 2.3px;
+    }
+    
+    
+    .sherBox:nth-child(10) p:nth-child(1) {
+        word-spacing: -6px;
+    }
+    .sherBox:nth-child(10) p:nth-child(2) {
+        word-spacing: 13.5px;
+    }
+
+
+    .sherBox:nth-child(11) p:nth-child(1) {
+        word-spacing: 3px;
+    }
+    .sherBox:nth-child(11) p:nth-child(2) {
+        word-spacing: 4.7px;
+    }
+
+
+    .sherBox:nth-child(12) p:nth-child(1) {
+        word-spacing: 1.2px;
+    }
+    .sherBox:nth-child(12) p:nth-child(2) {
+        word-spacing: 3.5px;
     }
     
     
@@ -1267,36 +1393,97 @@ hr {
 
     
     .sherBox:nth-child(1) p:nth-child(1) {
-        word-spacing: 5.5px;
+        word-spacing: 8px;
     }
     .sherBox:nth-child(1) p:nth-child(2) {
-        word-spacing: 6.5px;
+        word-spacing: 21px;
     }
+    
     
     .sherBox:nth-child(2) p:nth-child(1) {
-        word-spacing: 2px;
+        word-spacing: 5.5px;
     }
     .sherBox:nth-child(2) p:nth-child(2) {
-        word-spacing: 3.5px;
+        word-spacing: 9.3px;
     }
+    
     
     .sherBox:nth-child(3) p:nth-child(1) {
-        word-spacing: 38px;
+        word-spacing: 7.5px;
     }
     .sherBox:nth-child(3) p:nth-child(2) {
-        word-spacing: 5.5px;
+        word-spacing: 7.5px;
     }
     
     
+    .sherBox:nth-child(4) p:nth-child(1) {
+        word-spacing: 7.3px;
+    }
     .sherBox:nth-child(4) p:nth-child(2) {
-        word-spacing: 3.5px;
+        word-spacing: 11.5px;
     }
+    
     
     .sherBox:nth-child(5) p:nth-child(1) {
-        word-spacing: 5.5px;
+        word-spacing: 12.8px;
     }
     .sherBox:nth-child(5) p:nth-child(2) {
-        word-spacing: 2px;
+        word-spacing: 6.2px;
+    }
+    
+    .sherBox:nth-child(6) p:nth-child(1) {
+        word-spacing: 10.5px;
+    }
+    .sherBox:nth-child(6) p:nth-child(2) {
+        word-spacing: 10px;
+    }
+    
+    
+    .sherBox:nth-child(7) p:nth-child(1) {
+        word-spacing: 10px;
+    }
+    .sherBox:nth-child(7) p:nth-child(2) {
+        word-spacing: 7px;
+    }
+    
+    
+    .sherBox:nth-child(8) p:nth-child(1) {
+        word-spacing: 6.5px;
+    }
+    .sherBox:nth-child(8) p:nth-child(2) {
+        word-spacing: 11px;
+    }
+    
+    
+    .sherBox:nth-child(9) p:nth-child(1) {
+        word-spacing: 7.2px;
+    }
+    .sherBox:nth-child(9) p:nth-child(2) {
+        word-spacing: 5px;
+    }
+    
+    
+    .sherBox:nth-child(10) p:nth-child(1) {
+        word-spacing: 0px;
+    }
+    .sherBox:nth-child(10) p:nth-child(2) {
+        word-spacing: 13px;
+    }
+
+
+    .sherBox:nth-child(11) p:nth-child(1) {
+        word-spacing: 5.5px;
+    }
+    .sherBox:nth-child(11) p:nth-child(2) {
+        word-spacing: 7.2px;
+    }
+
+
+    .sherBox:nth-child(12) p:nth-child(1) {
+        word-spacing: 4.5px;
+    }
+    .sherBox:nth-child(12) p:nth-child(2) {
+        word-spacing: 6.8px;
     }
 
 
